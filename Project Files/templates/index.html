@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rainfall Prediction</title>
+</head>
+
+<body background="https://wallpaperaccess.com/full/701614.jpg">
+
+<center>
+    <h1>Rainfall Prediction</h1>
+
+    <form action="{{ url_for('predict') }}" method="post">
+
+        <label>MinTemp:</label>
+        <input type="text" name="MinTemp" required><br><br>
+
+        <label>MaxTemp:</label>
+        <input type="text" name="MaxTemp" required><br><br>
+
+        <label>Rainfall:</label>
+        <input type="text" name="Rainfall" required><br><br>
+
+        <label>WindGustSpeed:</label>
+        <input type="text" name="WindGustSpeed" required><br><br>
+
+        <label>WindSpeed9am:</label>
+        <input type="text" name="WindSpeed9am" required><br><br>
+
+        <label>WindSpeed3pm:</label>
+        <input type="text" name="WindSpeed3pm" required><br><br>
+
+        <label>Humidity9am:</label>
+        <input type="text" name="Humidity9am" required><br><br>
+
+        <label>Humidity3pm:</label>
+        <input type="text" name="Humidity3pm" required><br><br>
+
+        <label>Pressure9am:</label>
+        <input type="text" name="Pressure9am" required><br><br>
+
+        <label>Pressure3pm:</label>
+        <input type="text" name="Pressure3pm" required><br><br>
+
+        <label>Temp9am:</label>
+        <input type="text" name="Temp9am" required><br><br>
+
+        <label>Temp3pm:</label>
+        <input type="text" name="Temp3pm" required><br><br>
+
+        <label>RainToday:</label>
+        <select name="RainToday" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br><br>
+
+        <button type="submit" style="height:35px;width:200px">
+            Predict
+        </button>
+
+    </form>
+
+</center>
+
+</body>
+</html>
